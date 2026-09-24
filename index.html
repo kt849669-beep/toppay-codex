@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="joesMXJMiCZgihDZ3s6e-xIG__M73iPq7UaiGNvBgUc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="application-name" content="TopPay" />
+    <meta name="apple-mobile-web-app-title" content="TopPay" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Primary Title & Description -->
+    <title>TopPay Login | Top Pay App — toppaay.com</title>
+    <meta name="description" content="TopPay login on toppaay.com. Read the Top Pay app guide for USDT to INR examples, APK download availability, deposit information and account safety." />
+    <meta name="keywords" content="TopPay, TopPay login, Top Pay, TopPay USDT, TopPay app download, TopPay APK download, TopPay USDT to INR, TopPay how to deposit, TopPay real or fake, TopPay real ya fake" />
+    <meta name="author" content="TopPay" />
+
+    <!-- Crawling Instructions -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Canonical and language targeting -->
+    <link rel="canonical" href="https://toppaay.com/" />
+    <link rel="alternate" hreflang="en-IN" href="https://toppaay.com/" />    <link rel="alternate" hreflang="x-default" href="https://toppaay.com/" />
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="TopPay" />
+    <meta property="og:title" content="TopPay Login | Top Pay App — toppaay.com" />
+    <meta property="og:description" content="TopPay login, mobile app guidance, USDT to INR examples and safe app download information." />
+    <meta property="og:url" content="https://toppaay.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:image" content="https://toppaay.com/toppay-logo.jpeg" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="TopPay login and app" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TopPay Login | Top Pay App — toppaay.com" />
+    <meta name="twitter:description" content="TopPay login, mobile app guidance, USDT to INR examples and safe app download information." />
+    <meta name="twitter:image" content="https://toppaay.com/toppay-logo.jpeg" />
+
+    <!-- Logo / Favicon -->
+    <link rel="icon" type="image/jpeg" href="/toppay-logo.jpeg" />
+    <link rel="apple-touch-icon" href="/toppay-logo.jpeg" />
+
+    <!-- Performance Optimizations -->
+    <link rel="preload" href="./css/common.css" as="style" />
+    <link rel="preload" href="./css/login.css" as="style" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/mpin.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.511.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://toppaay.com/#website",
+      "url": "https://toppaay.com/",
+      "name": "TopPay",
+      "alternateName": [
+        "Top Pay",
+        "Toppay"
+      ],
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://toppaay.com/#webpage",
+      "url": "https://toppaay.com/",
+      "name": "TopPay Login | Top Pay App",
+      "description": "TopPay login and mobile web app guidance.",
+      "inLanguage": "en-IN",
+      "isPartOf": {
+        "@id": "https://toppaay.com/#website"
+      }
+    }
+  ]
+}
+    </script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1 class="header">LOG IN</h1>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <i data-lucide="phone" class="input-icon"></i>
+          <input
+            type="tel"
+            id="mobile"
+            class="form-control"
+            placeholder="Enter Your Phone Number"
+            maxlength="10"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <i data-lucide="lock" class="input-icon"></i>
+          <input
+            type="text"
+            id="password"
+            class="form-control"
+            placeholder="Enter Password"
+            required
+          />
+        </div>
+
+        <div class="forgot-password">
+          <a rel="nofollow noopener">Forget Password</a>
+        </div>
+
+        <div
+          id="errorMessage"
+          class="hidden"
+          style="
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+          "
+        ></div>
+
+        <div class="login-btn-container">
+          <button type="submit" class="btn-primary" id="loginBtn">
+            LOG IN
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+
+    <div class="mpin-overlay" id="mpinOverlay" aria-hidden="true">
+      <section class="mpin-sheet" role="dialog" aria-modal="true" aria-labelledby="mpinTitle">
+        <h2 id="mpinTitle">Please enter MPIN verification</h2>
+        <p>Enter your 6-digit MPIN to continue</p>
+
+        <div class="mpin-digits" id="mpinDigits" aria-label="Six digit MPIN">
+          <span class="mpin-digit active"></span>
+          <span class="mpin-digit"></span>
+          <span class="mpin-digit"></span>
+          <span class="mpin-digit"></span>
+          <span class="mpin-digit"></span>
+          <span class="mpin-digit"></span>
+        </div>
+
+        <div class="mpin-keypad" aria-label="MPIN keypad">
+          <button type="button" data-key="1">1</button>
+          <button type="button" data-key="2">2</button>
+          <button type="button" data-key="3">3</button>
+          <button type="button" data-key="4">4</button>
+          <button type="button" data-key="5">5</button>
+          <button type="button" data-key="6">6</button>
+          <button type="button" data-key="7">7</button>
+          <button type="button" data-key="8">8</button>
+          <button type="button" data-key="9">9</button>
+          <div></div>
+          <button type="button" data-key="0">0</button>
+          <button type="button" class="key-action key-delete" data-action="delete" aria-label="Delete last digit">⌫</button>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="./js/local-flow.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
